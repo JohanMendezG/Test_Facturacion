@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header">
+    <h1>{{id == 0 ? 'Nuevo' : 'Editar'}} Cliente</h1>
+  </div>
+  <div class="card-body">
+    <form class="formBody">
+      <input class="form-control form-control-sm" type="text" placeholder="Documento" [(ngModel)]="documento" name="documento">
+      <input class="form-control form-control-sm" type="text" placeholder="Nombres" [(ngModel)]="nombres" name="nombres">
+      <input class="form-control form-control-sm" type="text" placeholder="Primer Apellido" [(ngModel)]="primerApellido" name="primerApellido">
+      <input class="form-control form-control-sm" type="text" placeholder="Segundo Apellido" [(ngModel)]="segundoApellido" name="segundoApellido">
+      <input class="form-control form-control-sm" type="text" placeholder="Edad" [(ngModel)]="edad" name="edad">
+      <div class="action">
+        <button type="button" class="btn btn-danger" [routerLink]="['/cliente']">Volver</button>
+        <button type="submit" class="btn btn-primary" (click)="ClienteRequest()">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>

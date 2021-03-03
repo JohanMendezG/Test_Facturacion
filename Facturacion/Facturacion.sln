@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturacionApi", "FacturacionApi\FacturacionApi.csproj", "{D9078BFC-5484-43F0-B8B7-E4DCC460BB03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturacionFront", "FacturacionFront\FacturacionFront.csproj", "{3ECEDE51-59C0-4BCF-A4AE-53147E16976B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9078BFC-5484-43F0-B8B7-E4DCC460BB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9078BFC-5484-43F0-B8B7-E4DCC460BB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9078BFC-5484-43F0-B8B7-E4DCC460BB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9078BFC-5484-43F0-B8B7-E4DCC460BB03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECEDE51-59C0-4BCF-A4AE-53147E16976B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECEDE51-59C0-4BCF-A4AE-53147E16976B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECEDE51-59C0-4BCF-A4AE-53147E16976B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECEDE51-59C0-4BCF-A4AE-53147E16976B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59B19E90-D95D-4AC3-B762-234AA3B9F930}
+	EndGlobalSection
+EndGlobal

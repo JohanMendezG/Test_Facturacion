@@ -1,0 +1,33 @@
+<h1 id="tableLabel">Clientes Registrados</h1>
+<p *ngIf="!clientes"><em>Loading...</em></p>
+
+<div class="nuevo">
+  <button type="button" class="btn btn-primary" [routerLink]="['/form-cliente',0]">Insertar nuevo registro</button>
+</div>
+<div>
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="clientes">
+    <thead>
+      <tr>
+        <th>Documento</th>
+        <th>Nombres</th>
+        <th>Primer Apellido</th>
+        <th>Segundo Apellido</th>
+        <th>Edad</th>
+        <th style="text-align:center;">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{ cliente.Documento }}</td>
+        <td>{{ cliente.Nombres }}</td>
+        <td>{{ cliente.PrimerApellido }}</td>
+        <td>{{ cliente.SegundoApellido }}</td>
+        <td>{{ cliente.Edad }}</td>
+        <td style="text-align:center; display:flex; justify-content: space-around;">
+          <button type="button" class="btn btn-primary" [routerLink]="['/form-cliente',cliente.Documento]">Editar</button>
+          <button type="button" class="btn btn-danger" [routerLink]="['/confirmar-cliente',cliente.Documento]">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
